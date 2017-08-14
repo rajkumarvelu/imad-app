@@ -25,7 +25,7 @@ p
   text-align: center;
     color:red;
 }
-/*div{
+div a {
     height:50px;
     width:120px;
     border-color:#6495ED;
@@ -33,4 +33,4 @@ p
     border-style: solid;
     border-width: 2px;
         
-}*/
+}
