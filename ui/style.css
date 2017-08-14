@@ -25,3 +25,12 @@ p
   text-align: center;
     color:red;
 }
+div{
+    height:50px;
+    width:120px;
+    border-color:#6495ED;
+    background-color:#BCD2EE;
+    border-style: solid;
+    border-width: 2px;
+        
+}
