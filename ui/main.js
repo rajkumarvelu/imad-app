@@ -22,7 +22,7 @@ button.onclick = function() {
     };
     
     request.open('GET', 'http://velurajkumar.imad.hasura-app.io/counter',true);
-    request.send(null)
+    request.send(null);
     
     
     //counter = counter + 1;
