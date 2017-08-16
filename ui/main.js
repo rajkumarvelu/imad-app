@@ -6,10 +6,8 @@ button.onclick=function(){
     
     var request = XMLHttpRequest();
     request.onreadystatechange = function(){
-      if(request.readyState === XMLHttpRequest.DONE)
-      {
-      
-         if(request.Status ==== 200)
+      if(request.readyState === XMLHttpRequest.DONE){
+               if(request.Status === 200)
          {
              var counter = request.responseText;
              var span = document.getElementById('count');
@@ -20,6 +18,11 @@ button.onclick=function(){
       
       
     };
+    
+    request.open('GET','http://velurajkumar.imad.hasura-app.io/counter',true);
+    request.send(null);
+    
+    
     //counter = counter + 1;
     
 };
