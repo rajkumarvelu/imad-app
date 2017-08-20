@@ -1,7 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var Pool = require('pg').Pool;
+//var Pool = require('pg').Pool;
 
 //var config = {
  // user:'velurajkumar',
@@ -21,7 +21,7 @@ app.get('/counter',function (req,res) {
    res.send(counter.toString() );
 });
 
-var Pool = new Pool(config);
+//var Pool = new Pool(config);
 
 
 var counter=0;
@@ -36,23 +36,6 @@ app.get('/article1', function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article1.html'));
     
 });
-
-app.get('/test-db'), function(req,res){
-//
-
-pool.query('SEELCT * FROM test ',function (err,result)
-{
-    if(err)
-    {
-        res.status(500).send(err.tostring());
-    }
-    else
-    {
-res.send(JSON.stringify(result));
-}
-
-});
-};
 
 
 
