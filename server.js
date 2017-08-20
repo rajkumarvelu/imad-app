@@ -21,7 +21,7 @@ app.get('/counter',function (req,res) {
    res.send(counter.toString() );
 });
 
-//var Pool = new Pool(config);
+var Pool = new Pool(config);
 
 
 var counter=0;
