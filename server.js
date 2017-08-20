@@ -26,7 +26,7 @@ var Pool = new Pool(config);
 app.get('/test-db', function(req,res){
 
 
-pool.query('SElECT * FROM test ',function (err,result)
+pool.query('SElECT * FROM test',function (err,result)
 {
     if(err)
     {
