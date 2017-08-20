@@ -23,10 +23,10 @@ app.get('/counter',function (req,res) {
 
 var Pool = new Pool(config);
 
-app.get('/rajkumar'), function(req,res){
+app.get('/rajkumar-db', function(req,res){
 
 
-pool.query('SEELCT * FROM test ',function (err,result)
+pool.query('SElECT * FROM test ',function (err,result)
 {
     if(err)
     {
@@ -36,9 +36,9 @@ pool.query('SEELCT * FROM test ',function (err,result)
     {
 res.send(JSON.stringify(result));
 }
-
 });
-};
+});
+
 
 
 var counter=0;
