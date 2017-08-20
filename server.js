@@ -6,8 +6,8 @@ var Pool = require('pg').Pool;
 var config = {
  user:'velurajkumar',
  database :'velurajkumar',
-  host: db.imad.hasura-app.io,
-  port: 5432,
+  host: 'db.imad.hasura-app.io',
+  port: '5432',
   password: process.env.DB_PASSWORD};
 
 var app = express();
@@ -36,7 +36,6 @@ app.get('/article1', function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article1.html'));
     
 });
-
 
 
 app.get('/article2', function(req,res){
