@@ -23,7 +23,7 @@ app.get('/counter',function (req,res) {
 
 var Pool = new Pool(config);
 
-app.get('/test-db'), function(req,res){
+app.get('/rajkumar'), function(req,res){
 
 
 pool.query('SEELCT * FROM test ',function (err,result)
