@@ -23,6 +23,23 @@ app.get('/counter',function (req,res) {
 
 var Pool = new Pool(config);
 
+app.get('/test-db'), function(req,res){
+
+
+pool.query('SEELCT * FROM test ',function (err,result)
+{
+    if(err)
+    {
+        res.status(500).send(err.tostring());
+    }
+    else
+    {
+res.send(JSON.stringify(result));
+}
+
+});
+};
+
 
 var counter=0;
 app.get('/', function (req, res) {
